@@ -1,7 +1,6 @@
 import glob
 import json
 import os
-import random
 import time
 from collections import defaultdict
 from typing import Any, Dict
@@ -148,11 +147,6 @@ def main():
     # Find all JSON files in the reddit_data directory and its subdirectories
     data_paths = glob.glob("reddit_data/**/*.json", recursive=True)
     print(f"Found {len(data_paths)} posts to analyze")
-
-    # Subsample 10 random paths if we have more than 10 posts
-    if len(data_paths) > 10:
-        data_paths = random.sample(data_paths, 10)
-        print("Subsampled to 10 random posts for analysis")
 
     results = []
 
