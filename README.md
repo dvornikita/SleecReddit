@@ -39,6 +39,21 @@ A Python program that scrapes posts from specified subreddits, saves them to you
    ```
    Then edit the `.env` file and add your Reddit API credentials and OpenAI API key.
 
+   The `.env` file should look like this:
+   ```
+   # Reddit API credentials
+   # Get these by creating a Reddit app at https://www.reddit.com/prefs/apps
+   REDDIT_CLIENT_ID=your_client_id_here
+   REDDIT_CLIENT_SECRET=your_client_secret_here
+   REDDIT_USER_AGENT=SleecReddit scraper by /u/YourUsername 
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
+
+   - `REDDIT_CLIENT_ID`: Your Reddit app's client ID
+   - `REDDIT_CLIENT_SECRET`: Your Reddit app's client secret
+   - `REDDIT_USER_AGENT`: A unique user agent string for your Reddit app
+   - `OPENAI_API_KEY`: Your OpenAI API key
+
 ## Usage
 
 ### Scraping Data
